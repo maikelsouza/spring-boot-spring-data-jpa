@@ -19,6 +19,7 @@ public class EmpregoController {
 	EmpregoRepository empregoRepository;
 	
 	
+	
 	@RequestMapping("/")
 	public String listaEmpregos(Model model) {
 		model.addAttribute("empregos",empregoRepository.findAll());
